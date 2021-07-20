@@ -4,12 +4,14 @@ interface Props {
   color?: string;
   text?: boolean;
   contained?: boolean;
+  children: any;
 }
 
 export default function PrimaryButton({
   color = "primary",
   contained = true,
   text = false,
+  children
 }: Props): ReactElement {
   //Contained button classes
   const containedButton: string[] = [
@@ -33,10 +35,10 @@ export default function PrimaryButton({
 
   return (
     <button
-      className={`px-2 py-1 rounded focus:outline-none focus:none active:none 
-    transition duration-300 ease-in-out ${giveClasses()}`}
+      className={`px-3 py-1 rounded-full focus:outline-none focus:none active:none 
+    transition duration-300 ease-in-out uppercase font-bold ${giveClasses()}`}
     >
-      Hola
+      {children}
     </button>
   );
 }
