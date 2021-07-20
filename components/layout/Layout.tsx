@@ -24,7 +24,9 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
         <p>navbar</p>
       </nav>
     </header>
+    <div className="container px-4">
     {children}
+    </div>
   </div>
 );
 
