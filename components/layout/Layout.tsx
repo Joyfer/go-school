@@ -1,15 +1,14 @@
 import React, { ReactNode } from "react";
 import Head from "next/head";
+import Navbar from "../navbar/Navbar"
 
 type Props = {
   children?: ReactNode;
-  title?: string;
 };
 
-const Layout = ({ children, title = "This is the default title" }: Props) => (
+const Layout = ({ children }: Props) => (
   <div>
     <Head>
-      <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,10 +20,10 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
     </Head>
     <header>
       <nav>
-        <p>navbar</p>
+        <Navbar />
       </nav>
     </header>
-    <div className="container px-4">
+    <div className="container px-4 mx-auto pb-4">
     {children}
     </div>
   </div>

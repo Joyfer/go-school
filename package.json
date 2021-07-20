@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mdi/js": "^5.9.55",
+    "@mdi/react": "^1.5.0",
     "@tailwindcss/forms": "^0.3.3",
     "next": "11.0.1",
     "react": "17.0.2",
