@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <main className="h-screen flex items-center justify-center flex-col">
+        <main className="mt-20 flex items-center justify-center flex-col">
           <div className="text-center mb-4">
             <h1 className="mb-4">INICIA SESIÓN</h1>
             <p>
@@ -23,7 +23,7 @@ export default function Home() {
           <form className="space-y-4 w-full">
             <TextInput placeholder="User" />
             <TextInput placeholder="Password" type="password" />
-            <PrimaryButton className="w-full py-2">Iniciar</PrimaryButton>
+            <PrimaryButton className="w-full py-3">Iniciar</PrimaryButton>
           </form>
         </main>
       </Layout>
