@@ -5,7 +5,6 @@ import CardLayout from "../../components/resources/card/CardLayout";
 import CardTitle from "../../components/resources/card/CardTitle";
 import CardText from "../../components/resources/card/CardText";
 import CardActions from "../../components/resources/card/CardActions";
-import Badge from "../../components/resources/badge/Badge";
 
 import Icon from "@mdi/react";
 import { mdiSubdirectoryArrowRight } from "@mdi/js";
@@ -30,7 +29,7 @@ export default function homeworkIndex(): ReactElement {
         </p>
       </div>
       <div className="mt-6 space-y-2">
-        {["Tareas", "Blogs"].map((el) => (
+        {["1", "2", "3", "4", "5"].map((el) => (
           <CardLayout key={el}>
             <Link href="/about" passHref>
               <LinkCard>
