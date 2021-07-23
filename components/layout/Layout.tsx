@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 import Head from "next/head";
 import Navbar from "../navbar/Navbar"
-import FabMenubutton from "./sideBar/FabMenubutton";
+import SideBarAndButton from "./sideBar/SideBarAndButton";
 
 type Props = {
   children?: ReactNode;
@@ -26,7 +26,7 @@ const Layout = ({ children }: Props) => (
     </header>
     <div className="container px-4 mx-auto pb-4">
     {children}
-    <FabMenubutton></FabMenubutton>
+    <SideBarAndButton />
     </div>
   </div>
 );
