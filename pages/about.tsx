@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Layout from "../components/layout/Layout";
-import CardLayout from "../components/resources/card/CardLayout";
+import Card from "../components/resources/card/CardLayout";
 import CardTitle from "../components/resources/card/CardTitle";
 import CardText from "../components/resources/card/CardText";
 import Icon from "@mdi/react";
@@ -26,7 +26,7 @@ export default function about() {
           <h1 className="mt-6 mb-4">What this can do?</h1>
           <div className="space-y-2">
             {[1, 2, 3, 4].map((el) => (
-              <CardLayout key={el}>
+              <Card key={el}>
                 <CardTitle
                   icon={
                     <Icon
@@ -41,7 +41,7 @@ export default function about() {
                   temporibus quod odio quos possimus. Nam, fugit? Itaque ad
                   repellendus voluptatibus.
                 </CardText>
-              </CardLayout>
+              </Card>
             ))}
           </div>
         </main>

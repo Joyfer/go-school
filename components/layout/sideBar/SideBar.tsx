@@ -19,7 +19,7 @@ function SideBar({ active }: Props): ReactElement {
         "h-full bg-white fixed left-0 top-0 shadow-2xl w-60 transition duration-300 ease-in-out" + " " + `${isActive()}`
       }
     >
-      <p className="text-black">asdas</p>
+      <p className="text-black" >asdas</p>
     </div>
   );
 }

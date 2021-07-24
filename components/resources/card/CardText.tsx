@@ -5,7 +5,7 @@ interface Props {
 }
 
 const CardText = ({ children }: Props) => {
-  return <p className="text-gray-700">{children}</p>;
+  return <div className="text-gray-700">{children}</div>;
 };
 
 export default CardText;

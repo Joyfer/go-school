@@ -39,4 +39,9 @@ p {
   font-weight: 500;
 }
 
+input:checked ~ .dot {
+  transform: translateX(100%);
+}
+
+
 

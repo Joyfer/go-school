@@ -14,7 +14,7 @@ export default function CardTitle({
   return (
     <div className="mb-3">
       <div className="flex justify-between">
-        <p className="text-black font-bold text-xl">{children}</p>
+        {children ? <p className="text-black font-bold text-xl">{children}</p> : ''}
         {icon ? icon : ""}
       </div>
       {subtitle ? <span className="text-accent font-bold">{subtitle}</span> : ""}

@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
 import Link from "next/link";
 import Layout from "../../components/layout/Layout";
-import Card from "../../components/resources/card/CardLayout";
+import CardLayout from "../../components/resources/card/CardLayout";
 import CardTitle from "../../components/resources/card/CardTitle";
 import CardText from "../../components/resources/card/CardText";
 import CardActions from "../../components/resources/card/CardActions";
@@ -19,18 +19,18 @@ const LinkCard = React.forwardRef(
   }
 );
 
-export default function homeworkIndex(): ReactElement {
+export default function blogIndex(): ReactElement {
   return (
     <Layout>
       <div className="text-center mt-10">
-        <h1 className="mb-4">Tareas</h1>
+        <h1 className="mb-4">Blogs</h1>
         <p>
-         Tienes 3 tares nuevas de: Biologia, Matemática.
+         Tienes 3 blogs sin leer de: Biologia, Matemática.
         </p>
       </div>
       <div className="mt-6 space-y-2">
         {["1", "2", "3", "4", "5"].map((el) => (
-          <Card key={el}>
+          <CardLayout key={el}>
             <Link href="/about" passHref>
               <LinkCard>
                 <CardTitle subtitle="Biologia">{el}</CardTitle>
@@ -46,7 +46,7 @@ export default function homeworkIndex(): ReactElement {
                 </CardActions>
               </LinkCard>
             </Link>
-          </Card>
+          </CardLayout>
         ))}
       </div>
     </Layout>
